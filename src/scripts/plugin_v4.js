@@ -40,7 +40,7 @@ vrBtn.T = function () {
 videojs.VRButton = button.extend(vrBtn);
 
 // Register the plugin with video.js.
-videojs.plugin('panorama', panorama({
+videojs.registerPlugin('panorama', panorama({
     _init: function (options) {
         var canvas = (options.videoType !== "3dVideo")?
             Canvas(component, window.THREE, {
